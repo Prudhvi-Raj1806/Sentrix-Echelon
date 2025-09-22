@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Lumora - Next-Generation Crisis Simulation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800;900&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Tailwind config remains here to be processed by the CDN script
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Exo 2', 'sans-serif'],
+                        sans: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#00f2ff',
+                        'secondary': '#9e00ff',
+                        'dark': '#0a0a0f',
+                        'light': '#1a1a1f',
+                        'text-main': '#e5e5e5',
+                        'text-muted': '#a0a0a0',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 10px -5px #00f2ff', color: '#00f2ff' },
+                            '50%': { boxShadow: '0 0 25px 0px #00f2ff', color: '#ffffff' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-text-main font-sans">
+
+    <!-- Header -->
+    <header class="bg-dark/80 backdrop-blur-lg sticky top-0 z-50 border-b border-primary/10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-heading font-bold text-text-main uppercase">
+                Project <span class="text-primary">Lumora</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-bold tracking-wider">
+                <a href="#problem" class="text-text-muted hover:text-primary transition">The Deficit</a>
+                <a href="#solution" class="text-text-muted hover:text-primary transition">The Protocol</a>
+                <a href="#characters" class="text-text-muted hover:text-primary transition">Personas</a>
+                <a href="#market-analysis" class="text-text-muted hover:text-primary transition">Intel</a>
+                <a href="#contact" class="bg-primary/80 text-dark px-5 py-2 rounded-md hover:bg-primary transition shadow-lg hover:shadow-primary/30">Deploy Demo</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-primary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-primary/10">
+            <a href="#problem" class="block py-2 text-text-muted hover:text-primary transition">The Deficit</a>
+            <a href="#solution" class="block py-2 text-text-muted hover:text-primary transition">The Protocol</a>
+            <a href="#characters" class="block py-2 text-text-muted hover:text-primary transition">Personas</a>
+            <a href="#market-analysis" class="block py-2 text-text-muted hover:text-primary transition">Intel</a>
+            <a href="#contact" class="block mt-2 bg-primary text-dark text-center px-5 py-2 rounded-md hover:bg-primary/80 transition shadow-lg">Deploy Demo</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section" class="hero-bg text-white pt-28 pb-32 md:pt-20 md:pb-28">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <span class="inline-block border border-primary/30 bg-primary/10 text-primary px-4 py-1 rounded-md text-sm font-bold tracking-widest mb-4 animated-element">AI-DRIVEN HUMAN RESILIENCE CALIBRATION</span>
+                    <h1 class="font-heading text-5xl md:text-6xl font-extrabold mb-6 leading-tight animated-element" style="animation-delay: 0.2s;">Architecting Resilience. Engineering Response.</h1>
+                    <p class="text-lg md:text-xl text-text-muted mb-10 max-w-3xl mx-auto animated-element" style="animation-delay: 0.4s;">We forge elite preparedness through hyper-realistic, AI-governed virtual training environments. Project Lumora recalibrates human instinct for mission-critical crisis scenarios.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 animated-element" style="animation-delay: 0.6s;">
+                        <a href="#solution" class="cta-button w-full sm:w-auto">Engage Protocol</a>
+                        <a href="#market-analysis" class="secondary-button w-full sm:w-auto">View Intel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-20 bg-dark">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <span class="text-primary font-semibold tracking-widest">THE RESPONSE DEFICIT</span>
+                    <h2 class="section-title">SYSTEMIC FAILURE IN HUMAN PREPAREDNESS</h2>
+                    <p class="section-subtitle">Conventional training methodologies are obsolete. They create a dangerous illusion of safety, leaving personnel critically unprepared for the chaotic reality of a disaster event.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="stat-card animated-element">
+                        <h3 class="font-heading text-4xl font-bold text-primary">INERTIA</h3>
+                        <p class="text-text-muted mt-2">Static, paper-based plans fail to build the cognitive and motor reflexes required for high-stress situations.</p>
+                    </div>
+                    <div class="stat-card animated-element" style="animation-delay: 0.2s;">
+                        <h3 class="font-heading text-4xl font-bold text-primary">LOW FIDELITY</h3>
+                        <p class="text-text-muted mt-2">Infrequent, performative drills lack realism and fail to simulate the complex variables of a true crisis.</p>
+                    </div>
+                    <div class="stat-card animated-element" style="animation-delay: 0.4s;">
+                        <h3 class="font-heading text-4xl font-bold text-primary">GENERIC</h3>
+                        <p class="text-text-muted mt-2">One-size-fits-all protocols ignore localized threat vectors, rendering training ineffective and irrelevant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="py-20 bg-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                     <span class="text-primary font-semibold tracking-widest">THE LUMORA PROTOCOL</span>
+                    <h2 class="section-title">CALIBRATION THROUGH IMMERSION</h2>
+                    <p class="section-subtitle">Our VR simulation engine moves beyond training; it achieves neural recalibration. We immerse users in dynamic, high-fidelity scenarios to forge genuine, instinctual resilience.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="tech-card animated-element">
+                        <h3 class="font-heading text-xl font-bold mb-2 text-primary">Hyper-Realistic Simulation</h3>
+                        <p class="text-text-muted">Enter dynamic, physics-based environments modeling seismic events, structural fires, or chemical breaches. Success is not guaranteed; it is earned.</p>
+                    </div>
+                    <div class="tech-card animated-element" style="animation-delay: 0.2s;">
+                        <h3 class="font-heading text-xl font-bold mb-2 text-primary">AI Adjutant System</h3>
+                        <p class="text-text-muted">An integrated AI mentor analyzes decision-making under stress, providing tactical feedback and adapting scenario difficulty to target and eliminate weaknesses.</p>
+                    </div>
+                    <div class="tech-card animated-element" style="animation-delay: 0.4s;">
+                        <h3 class="font-heading text-xl font-bold mb-2 text-primary">Adaptive Neuro-Retraining</h3>
+                        <p class="text-text-muted">The system identifies hesitation and error patterns, re-tasking users with iterative, escalating drills to overwrite flawed responses with optimal protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="py-20 bg-dark">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <span class="text-primary font-semibold tracking-widest">SYSTEM PERSONAS</span>
+                    <h2 class="section-title">INTELLIGENT GUIDANCE SYSTEMS</h2>
+                    <p class="section-subtitle">Meet the AI operatives that power the Project Lumora experience, providing adaptive guidance, tactical support, and in-depth analysis.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- Character Card: Cinder -->
+                    <div class="character-card animated-element">
+                        <img src="0a8ed2f4cfd3866b1a1a07f8af71b0fa1e4ff289.jpg" alt="AI Chatbot Cinder" class="character-image">
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-primary">CINDER</h3>
+                            <p class="font-semibold text-text-muted mb-2">Data Support AI</p>
+                            <p class="text-text-muted text-sm">A specialized query bot offering real-time data and answers within the simulation, ensuring clarity under pressure.</p>
+                        </div>
+                    </div>
+                    <!-- Character Card: Spark -->
+                    <div class="character-card animated-element" style="animation-delay: 0.2s;">
+                        <img src="f2b3f4ca4b40eb43dcf37fd38251a127b32a0780.jpg" alt="AI Chatbot Spark" class="character-image">
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-primary">SPARK</h3>
+                            <p class="font-semibold text-text-muted mb-2">Morale Support AI</p>
+                            <p class="text-text-muted text-sm">Focuses on morale and psychological support, providing encouragement and stress-mitigation feedback during high-intensity scenarios.</p>
+                        </div>
+                    </div>
+                    <!-- Character Card: Lumora -->
+                    <div class="character-card animated-element" style="animation-delay: 0.4s;">
+                        <img src="5a9aba56913475e177156137fae05cba2d0f661e.png" alt="Spirit Guide Lumora" class="character-image">
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-primary">LUMORA</h3>
+                            <p class="font-semibold text-text-muted mb-2">Spirit Guide</p>
+                            <p class="text-text-muted text-sm">The primary AI Spirit Guide, providing tactical oversight and neural recalibration to forge user resilience through adaptive guidance.</p>
+                        </div>
+                    </div>
+                    <!-- Logo Card -->
+                    <div class="character-card animated-element" style="animation-delay: 0.6s;">
+                        <img src="ba0c48a1e3aae8d161fd57b7fe05214bae0da803.jpg" alt="Project Logo" class="character-image">
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-primary">LUMORA</h3>
+                            <p class="font-semibold text-text-muted mb-2">Project Initiative</p>
+                            <p class="text-text-muted text-sm">The core symbol of Project Lumora, representing the fusion of technology and human resilience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Analysis Section -->
+        <section id="market-analysis" class="py-20 bg-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <span class="text-primary font-semibold tracking-widest">STRATEGIC ANALYSIS</span>
+                    <h2 class="section-title">MARKET DOMINANCE & PERFORMANCE METRICS</h2>
+                    <p class="section-subtitle">Empirical data validating the strategic imperative for Project Lumora. Our position is reinforced by exponential market growth and unparalleled training efficacy.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="tech-card animated-element lg:col-span-2">
+                        <h3 class="font-heading text-xl font-bold mb-4 text-primary">Market Growth Trajectory (CAGR)</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <span class="font-sans font-bold w-48 flex-shrink-0">VR Enterprise Training</span>
+                                <div class="w-full bg-dark rounded-full h-6"><div class="bg-primary h-6 rounded-full flex items-center justify-end pr-2" style="width: 90%;"><span class="text-dark font-bold text-sm">44.88%</span></div></div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-sans font-bold w-48 flex-shrink-0">AI Corporate Training</span>
+                                <div class="w-full bg-dark rounded-full h-6"><div class="bg-primary/70 h-6 rounded-full flex items-center justify-end pr-2" style="width: 45%;"><span class="text-dark font-bold text-sm">22.28%</span></div></div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-sans font-bold w-48 flex-shrink-0">Overall Corp. Training</span>
+                                <div class="w-full bg-dark rounded-full h-6"><div class="bg-primary/40 h-6 rounded-full flex items-center justify-end pr-2" style="width: 15%;"><span class="text-dark font-bold text-sm">7.8%</span></div></div>
+                            </div>
+                        </div>
+                        <p class="text-text-muted mt-4 text-sm">Positioned at the nexus of hyper-growth sectors, our solution significantly outpaces the legacy training market.</p>
+                    </div>
+                    <div class="tech-card animated-element">
+                        <h3 class="font-heading text-xl font-bold mb-4 text-primary">Economic Efficiency</h3>
+                        <div class="text-center"><p class="font-heading text-6xl font-extrabold text-white">6-12</p><p class="text-text-muted text-lg">Months to Positive ROI</p></div>
+                        <p class="text-text-muted mt-4 text-sm">Rapid ROI is achieved through reduced incidents, accelerated training, and increased personnel retention.</p>
+                    </div>
+                    <div class="tech-card animated-element">
+                        <h3 class="font-heading text-xl font-bold mb-4 text-primary">Cognitive Uplink</h3>
+                        <div class="flex items-center justify-around text-center">
+                            <div><p class="font-heading text-6xl font-extrabold text-primary">80%</p><p class="text-text-muted">Retention (1 Year)</p></div>
+                            <div class="text-4xl font-thin text-text-muted">vs</div>
+                            <div><p class="font-heading text-6xl font-extrabold text-text-muted">10%</p><p class="text-text-muted">Traditional</p></div>
+                        </div>
+                    </div>
+                    <div class="tech-card animated-element">
+                        <h3 class="font-heading text-xl font-bold mb-4 text-primary">Performance Enhancement</h3>
+                        <ul class="space-y-2 text-text-main">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6-4l-6.5 18-3.5-7 12.5-1.5L9 6z"></path></svg> 40% More Confident</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> 29% Faster Task Completion</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> 43% Reduction in Injuries</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card animated-element">
+                        <h3 class="font-heading text-xl font-bold mb-4 text-primary">Resource Optimization</h3>
+                        <p class="text-text-main text-lg">A single week of live "hotfire" training costs <span class="text-primary font-bold">$50,000</span>.</p>
+                        <p class="text-text-muted mt-2 text-sm">Our reusable VR system provides superior, repeatable training for a fraction of the long-term cost.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision / Call to Action -->
+        <section id="contact" class="py-24 bg-dark">
+             <div class="container mx-auto px-6 text-center">
+                 <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-text-main mb-4 uppercase">Secure. Calibrate. Prevail.</h2>
+                 <p class="text-lg md:text-xl text-text-muted max-w-3xl mx-auto mb-8">The future of disaster response is not taught; it is engineered. Deploy Project Lumora and arm your institution with the definitive strategic advantage.</p>
+                 <a href="mailto:deploy@projectlumora.com" class="cta-button animate-pulse-glow">Initiate Pilot Program</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-text-muted border-t border-primary/10">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading font-bold text-text-main mb-4">Project <span class="text-primary">Lumora</span></h3>
+                    <p>Engineering human resilience for a volatile world. A project by Team Akuno.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-heading font-semibold text-text-main mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#problem" class="hover:text-primary transition">The Deficit</a></li>
+                        <li><a href="#solution" class="hover:text-primary transition">The Protocol</a></li>
+                        <li><a href="#characters" class="hover:text-primary transition">Personas</a></li>
+                        <li><a href="#market-analysis" class="hover:text-primary transition">Intel</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-heading font-semibold text-text-main mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li>Protocol Inquiries: info@projectlumora.com</li>
+                        <li>Deployment: deploy@projectlumora.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-primary/20 pt-6 text-center text-sm">
+                <p>&copy; 2025 Project Lumora by Team Akuno. All rights reserved. SIH Submission. System Online.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
