@@ -25,7 +25,3 @@ Notes
 - Logo upload is a client-side-only preview that updates the header logo.
 - This is a front-end prototype. Analytics and dashboards are static/dummy data intended for integration.
 
-Next steps
-- Replace assets and photos
-- Add real analytics endpoints and websockets for live dashboards
-- Integrate with backend auth and user management
