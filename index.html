@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project Lumora — Team Akuno</title>
+    <title>Project Kavach — Team Lumora</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,364 +15,153 @@
   </head>
   <body>
     <canvas id="techBackground"></canvas>
-    <!-- Mobile Menu Overlay -->
-    <div id="mobileMenuOverlay"></div>
 
-    <!-- Start button that transforms into orb -->
+    <!-- Start Screen -->
     <div id="startScreen">
-      <button id="startButton" class="start-button">🚀 Launch Project Lumora</button>
+      <button id="startButton" class="start-button">🚀 Launch Project Kavach</button>
     </div>
 
-    <!-- Cinematic loader / orb -->
+    <!-- Cinematic Loader -->
     <div id="cinema" class="hidden">
       <div id="orb"></div>
     </div>
 
-    <!-- Main site container -->
+    <!-- Main Site Container -->
     <div id="mainSite" class="hidden">
       <!-- Pinned Navbar -->
       <header class="topbar">
         <div class="navbar-bg"></div>
         <div class="navbar-content">
           <div class="logoWrap">
-            <div id="logoPlaceholder" class="logo">L</div>
-            <input type="file" id="logoUploader" accept="image/*" aria-label="Upload logo" />
+            <div id="logoPlaceholder" class="logo">K</div>
+            <span>Project Kavach</span>
           </div>
           <nav class="nav">
             <a href="#hero" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
             <a href="#features" class="nav-link">Features</a>
-            <a href="#scenarios" class="nav-link">Scenarios</a>
-            <a href="#guides" class="nav-link">Spirit Guides</a>
-            <a href="#analytics" class="nav-link">Analytics</a>
             <a href="#team" class="nav-link">Team</a>
-            <a href="#contact" class="nav-link">Contact</a>
           </nav>
           <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </button>
         </div>
         <div class="scroll-progress"></div>
       </header>
 
-      <!-- Main scrolling content with snap scrolling -->
+      <!-- Main Scrolling Content -->
       <main class="main-scroll-container">
+
+        <!-- Hero Section -->
         <section id="hero" class="section hero" data-title="Home">
-          <div class="section-content">
-            <div class="heroInner container">
-              <div class="heroLeft">
-                <h1 class="reveal-text">Train. Adapt. Survive. <span class="accent">Lumora</span> prepares the next generation.</h1>
-                <p class="lead reveal-text">Step into a gamified VR world where disaster preparedness becomes second nature.</p>
-                <div class="heroCtas reveal-text">
-                  <button class="btn primary" id="startTrainingBtn">Start Training</button>
-                  <button class="btn ghost" id="watchDemoBtn">Watch Demo</button>
-                </div>
+          <div class="section-content container">
+            <h1 class="reveal-text">Project Kavach</h1>
+            <p class="lead reveal-text">Forging the Future of National Disaster Response</p>
+            <div class="hero-subtext reveal-text">
+              <p>A Smart India Hackathon 2025 Initiative by <strong>Team Lumora</strong></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about" data-title="About">
+          <div class="section-content container">
+            <div class="section-header">
+              <span class="section-subtitle reveal-text">Our Mission</span>
+              <h2 class="sectionTitle reveal-text">An Atmanirbhar Shield for a Resilient India</h2>
+            </div>
+            <div class="about-grid">
+              <div class="about-card reveal-text">
+                <h3>The Challenge</h3>
+                <p>In the face of a chemical disaster, our nation's first responders are our first and last line of defense. Yet, the very nature of these events - involving hazardous materials and unpredictable environments, makes realistic training nearly impossible. This critical gap in preparedness is a challenge to our national security.</p>
               </div>
-              <div class="heroRight reveal-text">
-                <div class="videoContainer">
-                  <div class="videoPlaceholder" id="videoWrapper">
-                    <div class="playButton">
-                      <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M5 3l14 9-14 9V3z"/>
-                      </svg>
-                    </div>
-                    <div class="thumbnailOverlay"></div>
-                    <img src="https://placehold.co/640x360/0A0F1E/33C1FF?text=Lumora+Demo" alt="Demo Video" class="thumbnail"/>
-                    <video id="demoVideo" class="demoVideo" preload="metadata" playsinline>
-                      <source src="assets/demo.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
+              <div class="about-card reveal-text">
+                <h3>Our Response</h3>
+                <p>Answering the call from the Ministry of Home Affairs, Team Lumora is developing Project Kavach: a state-of-the-art, indigenously developed Virtual Reality (VR) Simulator. Our mission is to forge a new shield of preparedness for the elite personnel of the National Disaster Response Force (NDRF).</p>
+              </div>
+              <div class="about-card full-width reveal-text">
+                <h3>The Impact</h3>
+                <p>We are contributing to the vision of an Atmanirbhar Bharat - a self-reliant India, in the critical sector of national safety. Project Kavach is the foundation for a new, scalable standard in disaster response training, designed to ensure that when disaster strikes, our guardians are prepared, our communities are protected, and our nation stands resilient.</p>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="section features" data-title="Features">
-          <div class="section-content">
+          <div class="section-content container">
             <div class="section-header">
-              <span class="section-subtitle reveal-text">Platform Capabilities</span>
-              <h2 class="sectionTitle reveal-text">Game-Changing Features</h2>
-              <p class="section-description reveal-text">Revolutionary technology that transforms disaster preparedness training</p>
+              <span class="section-subtitle reveal-text">The Kavach Simulator</span>
+              <h2 class="sectionTitle reveal-text">An Intelligent Training Ecosystem</h2>
             </div>
-            <div class="cards container">
+            <div class="cards">
               <div class="card">
-                <h3>Immersive Open World</h3>
-                <p>Explore realistic campus replicas and procedurally generated emergencies.</p>
+                <h3>Hyper-Realistic Environments</h3>
+                <p>Trainees step into dynamic virtual scenarios, from complex industrial leaks to high-threat chemical incidents.</p>
               </div>
               <div class="card">
-                <h3>AI-Powered Spirit Guides</h3>
-                <p>Adaptive helpers teach and coach through scenarios with empathy.</p>
+                <h3>Adaptive AI Mentor</h3>
+                <p>An intelligent guide customizes challenges in real-time, adapting to the trainee's performance and skill level.</p>
               </div>
               <div class="card">
-                <h3>Real-Time Analytics</h3>
-                <p>Monitor progress, identify weak spots, and adapt training dynamically.</p>
+                <h3>Proprietary Analytics Engine</h3>
+                <p>Immediate, actionable feedback on every decision, generating detailed reports to certify mission readiness.</p>
               </div>
               <div class="card">
-                <h3>Challenge System</h3>
-                <p>Gamified goals, leaderboards, and collaborative drills to keep learners engaged.</p>
+                <h3>Multi-User Scenarios</h3>
+                <p>Customizable, collaborative scenarios ensure every NDRF team can train together, just as they would fight together.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="scenarios" class="section scenarios" data-title="Scenarios">
-          <div class="section-content">
-            <div class="section-header">
-              <span class="section-subtitle reveal-text">Training Modules</span>
-              <h2 class="sectionTitle reveal-text">VR Training Scenarios</h2>
-              <p class="section-description reveal-text">Immersive disaster preparedness training for real-world situations</p>
-            </div>
-            <div class="scenarioGrid container">
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Earthquake" alt="Earthquake Response" />
-                <h4>Earthquake Response</h4>
-                <div class="meta">4.8 ★ · 12.3k users</div>
-                <button class="btn small">Start</button>
-              </div>
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Flood" alt="Flood Management" />
-                <h4>Flood Management</h4>
-                <div class="meta">4.7 ★ · 9.8k users</div>
-                <button class="btn small">Start</button>
-              </div>
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Wildfire" alt="Wildfire Evacuation" />
-                <h4>Wildfire Evacuation</h4>
-                <div class="meta">4.6 ★ · 6.2k users</div>
-                <button class="btn small">Start</button>
-              </div>
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Urban+Crisis" alt="Urban Crisis Response" />
-                <h4>Urban Crisis Response</h4>
-                <div class="meta">4.7 ★ · 7.1k users</div>
-                <button class="btn small">Start</button>
-              </div>
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Medical" alt="Medical Emergency Triage" />
-                <h4>Medical Emergency Triage</h4>
-                <div class="meta">4.9 ★ · 3.9k users</div>
-                <button class="btn small">Start</button>
-              </div>
-              <div class="scenario">
-                <img src="https://placehold.co/400x240/1f2c73/c5cde8?text=Chemical+Spill" alt="Chemical Spill Response" />
-                <h4>Chemical Spill Response</h4>
-                <div class="meta">4.5 ★ · 2.8k users</div>
-                <button class="btn small">Start</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="guides" class="section guides" data-title="Spirit Guides">
-          <div class="section-content">
-            <div class="section-header">
-              <span class="section-subtitle reveal-text">AI Companions</span>
-              <h2 class="sectionTitle reveal-text">Meet the AI Spirit Guides</h2>
-              <p class="section-description reveal-text">Intelligent virtual mentors that guide and support learners through every scenario</p>
-            </div>
-            <div class="guidesGrid container">
-              <div class="guideCard">
-                <div class="guidePortrait">
-                  <img src="https://placehold.co/110x110/ff643c/FFFFFF?text=Phoenix" alt="Phoenix Spirit Guide">
-                </div>
-                <h4>Phoenix — Fire</h4>
-                <div class="guideStats">Scenarios: 12,340 · Success: 95%</div>
-              </div>
-              <div class="guideCard">
-                <div class="guidePortrait">
-                  <img src="https://placehold.co/110x110/3c91ff/FFFFFF?text=Aqua" alt="Aqua Spirit Guide">
-                </div>
-                <h4>Aqua — Flood</h4>
-                <div class="guideStats">Scenarios: 8,900 · Success: 93%</div>
-              </div>
-              <div class="guideCard">
-                <div class="guidePortrait">
-                  <img src="https://placehold.co/110x110/50c878/FFFFFF?text=Terra" alt="Terra Spirit Guide">
-                </div>
-                <h4>Terra — Earthquake</h4>
-                <div class="guideStats">Scenarios: 11,200 · Success: 94%</div>
-              </div>
-              <div class="guideCard">
-                <div class="guidePortrait">
-                  <img src="https://placehold.co/110x110/a7a7a7/FFFFFF?text=Zephyr" alt="Zephyr Spirit Guide">
-                </div>
-                <h4>Zephyr — Storm</h4>
-                <div class="guideStats">Scenarios: 7,800 · Success: 92%</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="analytics" class="section analytics" data-title="Analytics">
-          <div class="section-content">
-            <div class="section-header">
-              <span class="section-subtitle reveal-text">Performance Insights</span>
-              <h2 class="sectionTitle reveal-text">Real-Time Analytics</h2>
-              <p class="section-description reveal-text">Comprehensive data insights and performance metrics for optimal training outcomes</p>
-            </div>
-            <div class="analyticsDashboard container">
-              <div class="chart-container">
-                <div class="chart-header">
-                  <h3>Training Progress Over Time</h3>
-                  <div class="chart-controls">
-                    <button class="btn small" data-period="7d">7 Days</button>
-                    <button class="btn small active" data-period="30d">30 Days</button>
-                    <button class="btn small" data-period="90d">90 Days</button>
-                  </div>
-                </div>
-                <div class="progress-chart">
-                  <canvas id="progressChart"></canvas>
-                </div>
-              </div>
-              <div class="activity-feed">
-                <div class="activity-header">
-                  <h4>Live Activity Feed</h4>
-                  <div class="activity-indicator">
-                    <span class="pulse-dot"></span>
-                    <span>Live</span>
-                  </div>
-                </div>
-                <div class="activity-list" id="liveFeed"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="reviews" class="section reviews" data-title="Reviews">
-            <div class="section-content">
-                <div class="section-header">
-                    <span class="section-subtitle reveal-text">User Feedback</span>
-                    <h2 class="sectionTitle reveal-text">What Our Users Say</h2>
-                </div>
-                <div class="carousel container" id="reviewsCarousel">
-                    <div class="carouselTrack">
-                        <div class="review-card">
-                          <blockquote>"Students loved the immersive scenarios. The earthquake simulation was so realistic that our safety drills improved dramatically."</blockquote>
-                          <div class="review-author">— Campus Safety Director</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                        <div class="review-card">
-                          <blockquote>"Clear analytics helped us target training where it was needed most. Our emergency response time improved by 40%."</blockquote>
-                          <div class="review-author">— District Administrator</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                        <div class="review-card">
-                          <blockquote>"The AI guides are so engaging and empathetic. Students actually look forward to safety training now."</blockquote>
-                          <div class="review-author">— High School Teacher</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                        <div class="review-card">
-                          <blockquote>"Fast onboarding for our entire staff. The interface is intuitive and the training modules are comprehensive."</blockquote>
-                          <div class="review-author">— Safety Coordinator</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                        <div class="review-card">
-                          <blockquote>"Perfect for conducting drills and assessments. The real-time analytics help us identify areas for improvement."</blockquote>
-                          <div class="review-author">— Safety Officer</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                        <div class="review-card">
-                          <blockquote>"Rich scenarios and detailed replay analysis. This is the future of emergency preparedness training."</blockquote>
-                          <div class="review-author">— Research Director</div>
-                          <div class="review-rating">★★★★★</div>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <button class="carouselPrev" aria-label="Previous reviews">‹</button>
-                        <button class="carouselNext" aria-label="Next reviews">›</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- Team Section -->
         <section id="team" class="section team" data-title="Team">
-          <div class="section-content">
+          <div class="section-content container">
             <div class="section-header">
-              <span class="section-subtitle reveal-text">Our Team</span>
+              <span class="section-subtitle reveal-text">The Minds Behind the Mission</span>
               <h2 class="sectionTitle reveal-text">Meet Team Lumora</h2>
-              <p class="section-description reveal-text">The minds behind Project Lumora, dedicated to revolutionizing disaster preparedness.</p>
             </div>
-            <div class="teamGrid container">
+            <div class="teamGrid">
               <div class="member">
                 <img src="assets/asfiya.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Asfiya'" alt="Asfiya" class="teamPhoto"/>
                 <h4>Asfiya</h4>
                 <div class="role">Lead & Chief Architect</div>
-                <p class="member-desc">Guides strategy and designs Lumora’s architecture, ensuring seamless integration of AI and VR.</p>
+                <p class="member-desc">The visionary backbone of Lumora’s architecture. She oversees the entire project lifecycle, ensuring the seamless integration of AI, VR, and real-time authority support.</p>
               </div>
               <div class="member">
                 <img src="assets/koel.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Koel'" alt="Koel" class="teamPhoto" />
                 <h4>Koel</h4>
                 <div class="role">Immersive Tech Developer</div>
-                <p class="member-desc">Builds dynamic VR worlds and transforms disaster drills into immersive experiences.</p>
+                <p class="member-desc">Brings disaster scenarios to life with breathtaking realism, crafting the dynamic and interactive virtual worlds where users learn critical skills.</p>
               </div>
               <div class="member">
                 <img src="assets/utkarsh.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Utkarsh'" alt="Utkarsh" class="teamPhoto" />
                 <h4>Utkarsh</h4>
                 <div class="role">Cognitive Systems Developer</div>
-                <p class="member-desc">Develops the adaptive AI guides, analytics, and therapeutic companions.</p>
+                <p class="member-desc">Engineers the minds of Lumora’s AI guides, developing adaptive learning models that personalize training for every user.</p>
               </div>
               <div class="member">
                 <img src="assets/asmita.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Asmita'" alt="Asmita" class="teamPhoto" />
                 <h4>Asmita</h4>
                 <div class="role">UI/UX & Overall Designer</div>
-                <p class="member-desc">Crafts the intuitive and symbolic user interfaces across all platform touchpoints.</p>
+                <p class="member-desc">The soul of Lumora’s interface, she designs the intuitive and emotionally engaging user journeys that make complex systems feel simple.</p>
               </div>
               <div class="member">
                 <img src="assets/prudhvi.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Prudhvi'" alt="Prudhvi" class="teamPhoto" />
                 <h4>Prudhvi</h4>
                 <div class="role">Platform & Web Engineer</div>
-                <p class="member-desc">Builds the backend, dashboards, and web presence, ensuring platform stability.</p>
+                <p class="member-desc">Builds the robust backend, cloud, and web architecture that powers our platform and its real-time dashboards for authority integration.</p>
               </div>
               <div class="member">
                 <img src="assets/khushi.jpg" onerror="this.src='https://placehold.co/120x120/0A0F1E/FFFFFF?text=Khushi'" alt="Khushi" class="teamPhoto" />
                 <h4>Khushi</h4>
                 <div class="role">Research & Operations</div>
-                <p class="member-desc">Leads outreach, pilots, and therapy integration, aligning modules with real-world needs.</p>
+                <p class="member-desc">Leads our research and outreach, coordinating pilot programs and ensuring every training module aligns with real-world needs.</p>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Footer is now a full-page section -->
-        <footer id="contact" class="footer section" data-title="Contact">
-            <div class="footerInner container">
-                <div class="col">
-                    <div class="logoWrap">
-                        <div class="logo">L</div>
-                        <h3>Project Lumora</h3>
-                    </div>
-                    <p>Powered by AI • Built for Resilience</p>
-                </div>
-                <div class="col">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#scenarios">Scenarios</a></li>
-                        <li><a href="#analytics">Analytics</a></li>
-                        <li><a href="#team">Team</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li>Docs</li>
-                        <li>API</li>
-                        <li>Training Guides</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Press Kit</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
       </main>
     </div>
     <script src="js/app.js"></script>
